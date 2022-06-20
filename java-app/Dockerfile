@@ -7,7 +7,7 @@ EXPOSE 8081
 #Copy the jar applicalion to docker container
 COPY target/**.jar /opt/app/**.jar
 
-ENV SPRING_PROFILES_ACTIVE dev
+#ENV SPRING_PROFILES_ACTIVE dev
 
 
 #Command thar automatically runs the app once the docker containter starts

@@ -1,17 +1,16 @@
 spring:
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
 
   datasource:
     driver-class-name: org.postgresql.Driver
-    #url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/studenti
-    url: jdbc:postgresql://ec2-3-228-235-79.compute-1.amazonaws.com:5432/d55iu99ufbm31d
-    username: wvazeqrjjtkjpw
-    password: 5cdd32b734d8aa737a350988d16bec2760d518decc0649e8c63de4985612affa
+    url: jdbc:postgresql://${DB_HOST}:${DB_PORT}}/studenti
+    username: postgres
+    password: postgres
 
 server:
-  port: ${PORT}
+  port: 8081
 
 jwt:
   cookieName: devmindApp
